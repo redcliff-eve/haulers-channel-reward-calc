@@ -48,7 +48,7 @@
 		var mult = 1;
 		if (volume <= 12e3){mult *= 1;}
 		else if(volume <= 60e3){mult *= 1;}
-		if (volume > 62500 && collat < 1e9){collat = (3e9+collat) / 4;}//low freighter collat pays more
+		if (volume > 60000 && collat < 1e9){collat = (3e9+collat) / 4;}//low freighter collat pays more
 		if (volume <= 60000 && volume > 12000 && collat < 1e9){collat = (1e9+collat) / 2;}//low DST collat pays more
 		if (volume <= 12000 && collat < 1e9){collat = (100e6+collat) / 1.1;}//low BR/t1 collat pays more
 
